@@ -174,7 +174,7 @@ function loadd(){
   
   csubj(0,1);
 var countDownDate = new Date().getTime();
-countDownDate+=(60*60*1000/3);
+countDownDate+=(2.5*60*60*1000);
 // Update the count down every 1 second
 var x = setInterval(function() {
 
