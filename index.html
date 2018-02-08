@@ -13,14 +13,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"> 
   </head>
 <body>
-  <div class="progress">
-    <div id="percent" class="progress-bar bg-success" style="width:0%"></div>
-</div>
   <br/>
   <button id="start" onclick='start()' class="btn btn-primary btn-lg btn-block">เริ่มทำแบบทดสอบ</button>
   <p id="time" class="timecountdown"></p>
   <div class="score"><p id="score"></p></div>
   <p id="question" class="q1"></p>
+  <div class="col-md-7">
+      <button id="close" class="btn btn-primary btn-lg btn-block" hidden="">กลับสู่บทเรียน</button>
+  </div>
   <div class="radio">
   <label>
     <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" onclick='st(1)' hidden=""><p id="c1" class="c"></p>
@@ -51,6 +51,6 @@
    </div>
     <button id="submit2" onclick='check2()' class="btn btn-secondary btn-lg btn-block" hidden="">ส่งคำตอบ</button>
     </div>
-
+  
 </body>
 </html>
