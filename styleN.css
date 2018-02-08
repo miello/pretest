@@ -6,6 +6,15 @@ html {
     font-size: 100%;
 }
 
+
+.score{
+   text-align: center;
+}
+
+.c{
+  display: inline;
+}
+
 .timecountdown{
   padding:0% 2% 0% 2%;
   margin:10px 30vw 10px 30vw;
