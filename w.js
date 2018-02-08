@@ -109,7 +109,7 @@ function di2(){
 function time(){
   // Set the date we're counting down to
 var countDownDate = new Date().getTime();
-  countDownDate+=(60*60*1000/3);
+  countDownDate+=(60*60*1000/3600);
   countDownDate+=6;
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -162,7 +162,33 @@ function st(x){
 function cq(x){
   now+=x;
   runqc(now);
-}
+    if(a[now]==0){
+      document.getElementById("optionsRadios1").checked=false;
+      document.getElementById("optionsRadios2").checked=false;
+      document.getElementById("optionsRadios3").checked=false;
+      document.getElementById("optionsRadios4").checked=false;
+    }else if(a[now]==1){
+      document.getElementById("optionsRadios1").checked=true;
+      document.getElementById("optionsRadios2").checked=false;
+      document.getElementById("optionsRadios3").checked=false;
+      document.getElementById("optionsRadios4").checked=false;
+    }else if(a[now]==2){
+      document.getElementById("optionsRadios1").checked=false;
+      document.getElementById("optionsRadios2").checked=true;
+      document.getElementById("optionsRadios3").checked=false;
+      document.getElementById("optionsRadios4").checked=false;
+    }else if(a[now]==3){
+      document.getElementById("optionsRadios1").checked=false;
+      document.getElementById("optionsRadios2").checked=false;
+      document.getElementById("optionsRadios3").checked=true;
+      document.getElementById("optionsRadios4").checked=false;
+    }else if(a[now]==4){
+      document.getElementById("optionsRadios1").checked=false;
+      document.getElementById("optionsRadios2").checked=false;
+      document.getElementById("optionsRadios3").checked=false;
+      document.getElementById("optionsRadios4").checked=true;
+    }
+  }
 
 
 
@@ -173,7 +199,7 @@ function check1(){
     if(a[i]==s[i])score++;
   }
   document.getElementById("score").innerHTML=" คะแนนที่ได้ " + score + " / 10<br>ปิดหน้านี้เพื่อเข้าสู่บทเรียน" ;
-  closed();
+   document.getElementById("close").hidden="";
 }
 
 
@@ -185,12 +211,9 @@ function check2(){
   }
   document.getElementById("score").innerHTML=" คะแนนที่ได้ " + score + " / 10<br>ปิดหน้านี้เพื่อเข้าสู่บทเรียน";
   di2();
-}
+    document.getElementById("close").hidden="";
 
-function closed(){
- setInterval(window.close(), 5000);
 }
-
 //Start Exam
 function start(){
   time();
@@ -204,12 +227,6 @@ function start(){
   runqc(now);
 }
 
-function showpercent(){
-  var s=0;
-  for(i=0;i<10;i++){
-    if(a[i]>0){
-      s++;
-    }
-  }
-  document.getElementById("percent").innerHTML="Progress " + s*10;
+function close(){
+  setInterval(window.close(), 5000);
 }
