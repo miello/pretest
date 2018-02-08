@@ -6,6 +6,9 @@ html {
     font-size: 100%;
 }
 
+.close{
+  text-align: center;
+}
 
 .score{
    text-align: center;
