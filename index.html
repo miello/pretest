@@ -17,38 +17,46 @@
   <button id="start" onclick='start()' class="btn btn-primary btn-lg btn-block">เริ่มทำแบบทดสอบ</button>
   <p id="time" class="timecountdown"></p>
   <div class="score"><p id="score"></p></div>
-  <p id="question" class="col-md-2"></p>
-  <div class="col-md-7">
-      <button id="close" class="btn btn-primary btn-lg btn-block" hidden="">กลับสู่บทเรียน</button>
+  <div class="question" id="q1">
+    <label id="question"></label>
+    </div>
+  <div>
+      <label class="col-md-4"></label>
+      <label class="col-md-4 text-center">  
+    <button id="close" onclick="close()" class="btn btn-primary btn-lg btn-block" hidden="">กลับสู่บทเรียน</button>
+    </label>
   </div>
   <div class="radio">
-  <label class="col-md-4">
+    <label class="col-md-4"></label>
+    <label class="col-sm-4 text-center">
     <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" onclick='st(1)' hidden=""><p id="c1" class="c"></p>
   </label>
 </div>
 <div class="radio">
-  <label class="col-md-4">
+  <label class="col-md-4"></label>
+  <label class="col-md-4 text-center">
     <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" onclick='st(2)' hidden=""><p id="c2" class="c"></p>
   </label>
 </div>
 <div class="radio">
-  <label class="col-md-4">
+  <label class="col-md-4"></label>
+  <label class="col-md-4  text-center">
     <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" onclick='st(3)' hidden=""><p id="c3" class="c"></p>
   </label>
 </div>
 <div class="radio">
-  <label class="col-md-4">
-    
+  <label class="col-md-4"></label>
+  <label class="col-md-4 text-center">
     <input type="radio" name="optionsRadios"id="optionsRadios4" value="option4" onclick='st(4)' hidden=""><p id="c4" class="c"></p>
   </label>
 </div>
   <div class="row">
-    <div class="col-md-6">
+    <label class="col-md-6 text-right">
       <button id="prev" type="button" onclick='cq(-1)' class="btn" hidden="">ข้อก่อนหน้า</button>
-       </div>
-    <div class="col-md-6 text-right">
+       </label>
+    <div class="col-md-6">
   <button id="next" type="button" onclick='cq(1)' class="btn btn-secondary " hidden="">ข้อถัดไป</button>
-    <button id="submit" type="button" onclick='check1()' class="btn btn-secondary" hidden="">ส่งคำตอบ</button> 
+      <button id="submit" type="button" onclick='check1()' class="btn btn-secondary" hidden="">ส่งคำตอบ</button> 
    </div>
     <button id="submit2" onclick='check2()' class="btn btn-secondary btn-lg btn-block" hidden="">ส่งคำตอบ</button>
     </div>
