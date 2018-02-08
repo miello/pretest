@@ -137,6 +137,7 @@ var x = setInterval(function() {
 //Run Question
 
 function runqc(i){
+  document.getElementById("prev").disabled=false;
   document.getElementById("question").innerHTML = q[i];
   document.getElementById("c1").innerHTML=c[i][0];
   document.getElementById("c2").innerHTML=c[i][1];
@@ -145,7 +146,7 @@ function runqc(i){
   document.getElementById("prev").hidden="";
   document.getElementById("next").hidden="";
   document.getElementById("submit").hidden="hidden";
-  if(now==0)document.getElementById("prev").hidden="hidden";
+  if(now==0)document.getElementById("prev").disabled=true;
   else if(now==9){
     document.getElementById("next").hidden="hidden";
     document.getElementById("submit").hidden="";
@@ -156,7 +157,6 @@ function runqc(i){
 
 function st(x){
   a[now]=x;
-  showpercent();
 }
 
 function cq(x){
