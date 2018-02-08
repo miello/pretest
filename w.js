@@ -198,7 +198,7 @@ function check1(){
   for(i=0;i<10;i++){
     if(a[i]==s[i])score++;
   }
-  document.getElementById("score").innerHTML=" คะแนนที่ได้ " + score + " / 10<br>ปิดหน้านี้เพื่อเข้าสู่บทเรียน" ;
+  document.getElementById("score").innerHTML=" คะแนนที่ได้ " + score + " / 10<br>ปิดหน้านี้เพื่อเข้าสู่บทเรียน";
    document.getElementById("close").hidden="";
 }
 
