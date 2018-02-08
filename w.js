@@ -228,5 +228,5 @@ function start(){
 }
 
 function close(){
-  setInterval(window.close, 5000);
+  window.close();
 }
