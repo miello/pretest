@@ -227,6 +227,6 @@ function start(){
   runqc(now);
 }
 
-function close(){
-  window.close();
+function closed(){
+  close();
 }
